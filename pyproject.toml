@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "multi-rnn"
+version = "0.1.0"
+description = ""
+authors = ["Shrey Dixit <shreyakshaj@gmail.com>"]
+readme = "README.md"
+packages = [{include = "multi_rnn"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+msapy = "^1.7.2"
+torch = "^2.3.1"
+neurogym = { git = "https://github.com/gyyang/neurogym.git", rev = "master" }
+gym = "0.23.1"
+seaborn = "^0.13.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
